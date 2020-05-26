@@ -22,7 +22,9 @@ makeCacheMatrix <- function(x = matrix()){
 }
 
 
-## Write a short comment describing this function
+## the func first checks if the inverse is not null.
+## If so, it gets the inverse from the cache and skips the computation. 
+## Otherwise, it does the calculation.
 
 cacheSolve <- function(x, ...) {
   w <- x$getInverse()
